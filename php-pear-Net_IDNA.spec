@@ -4,8 +4,8 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - punycode encoding and decoding.
-Summary(pl):	%{_pearname} - kodowanie i dekodowanie punycode.
+Summary:	%{_pearname} - punycode encoding and decoding
+Summary(pl):	%{_pearname} - kodowanie i dekodowanie punycode
 Name:		php-pear-%{_pearname}
 Version:	0.3.0
 Release:	1
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/
+install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
