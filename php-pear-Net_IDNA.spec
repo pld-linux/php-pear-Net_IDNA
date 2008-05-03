@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - punycode encoding and decoding
 Summary(pl.UTF-8):	%{_pearname} - kodowanie i dekodowanie punycode
 Name:		php-pear-%{_pearname}
-Version:	0.7.1
-Release:	3
+Version:	0.7.2
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9997c34fd19bb2da79cbc1ef24b6b1a9
+# Source0-md5:	b843793c0065c6e04ccfec3d8fe2e07e
 URL:		http://pear.php.net/package/Net_IDNA/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
