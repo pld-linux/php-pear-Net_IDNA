@@ -3,17 +3,15 @@
 %define		_subclass	IDNA
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - punycode encoding and decoding
 Summary(pl.UTF-8):	%{_pearname} - kodowanie i dekodowanie punycode
 Name:		php-pear-%{_pearname}
-Version:	0.7.2
+Version:	0.8.1
 Release:	1
-Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b843793c0065c6e04ccfec3d8fe2e07e
+# Source0-md5:	e436adb07e62375da7891e592a11a037
 URL:		http://pear.php.net/package/Net_IDNA/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -38,7 +36,7 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
 AutoProv:	no
 
@@ -64,7 +62,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
 
 %files tests
 %defattr(644,root,root,755)
