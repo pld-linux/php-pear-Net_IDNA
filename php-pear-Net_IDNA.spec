@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	Net_IDNA
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - punycode encoding and decoding
 Summary(pl.UTF-8):	%{_pearname} - kodowanie i dekodowanie punycode
 Name:		php-pear-%{_pearname}
