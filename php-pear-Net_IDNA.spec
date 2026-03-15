@@ -4,7 +4,7 @@ Summary:	%{_pearname} - punycode encoding and decoding
 Summary(pl.UTF-8):	%{_pearname} - kodowanie i dekodowanie punycode
 Name:		php-pear-%{_pearname}
 Version:	0.8.1
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
